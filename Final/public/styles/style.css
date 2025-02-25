@@ -1,0 +1,15 @@
+
+body {
+  background-image: url('https://img.freepik.com/vector-premium/fondo-tecnologia-circuito-sistema-conexion-datos-digitales-alta-tecnologia-diseno-electronico-computadora_29971-985.jpg?w=1380');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgb(205, 205, 205); 
+    padding: 10px; 
+    border-radius: 25px; 
+    opacity: 94%;
+}
+  
