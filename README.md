@@ -6,14 +6,67 @@ Este proyecto proporciona una base de datos MySQL para gestionar libros y autore
 ---
 
 ## 📁 Estructura del Proyecto
+
 ```
-/config
-├── bd.sql        # Script para la creación de las tablas
-├── data.sql      # Script con datos de ejemplo
-└── database.php  # Clase PHP para la conexión a MySQL
+Final/
+├── app/
+│   ├── controllers/      # Controladores que manejan las solicitudes HTTP
+│   │   ├── AutorController.php
+│   │   └── LibroController.php
+│   ├── core/             # Núcleo del proyecto, incluye el enrutador principal
+│   │   └── Router.php
+│   ├── models/           # Modelos que representan las entidades del sistema
+│   │   ├── Autor.php
+│   │   └── Libro.php
+│   ├── repositories/     # Encargados de la interacción con la base de datos
+│   │   ├── AutorRepository.php
+│   │   └── LibroRepository.php
+│   └── services/         # Lógica de negocio entre los controladores y repositorios
+│       ├── AutorService.php
+│       └── LibroService.php
+├── config/               # Archivos de configuración y scripts de base de datos
+│   ├── bd.sql
+│   ├── data.sql
+│   └── database.php
+├── node_modules/         # Dependencias gestionadas por npm (si aplica)
+├── public/               # Archivos públicos accesibles desde el navegador
+│   ├── js/               # Scripts JavaScript
+│   │   ├── appAutor.js
+│   │   └── appLibro.js
+│   ├── styles/           # Archivos de estilos CSS
+│   │   └── style.css
+│   └── templates/        # Plantillas reutilizables para las vistas
+│       ├── footer.php
+│       ├── header.php
+│       ├── gestionar_autores.php
+│       ├── gestionar_libros.php
+│       ├── index.php
+│       └── indexinicio.php
+├── .htaccess             # Configuración del servidor Apache para las rutas amigables
+├── package.json          # Información y gestión de las dependencias del proyecto
+├── package-lock.json     # Archivo de bloqueo de versiones de npm
 ```
 
----
+## Instalación
+1. **Clonar el repositorio:**
+   ```bash
+   git clone (https://github.com/MatVira/Proyect_Final)
+   ```
+2. **Configurar la base de datos:**
+   - Importar el archivo `bd.sql` y `data.sql` en tu gestor de base de datos.
+   - Configurar las credenciales en `config/database.php`.
+
+## Uso
+- **Gestión de Autores:** Permite crear, editar y eliminar autores.
+- **Gestión de Libros:** Permite registrar libros y asociarlos a autores.
+- **Vistas:** El sistema tiene vistas intuitivas para la administración.
+
+## Tecnologías Utilizadas
+- PHP
+- JavaScript
+- HTML & CSS
+- MySQL
+- Apache (para la configuración con `.htaccess`)
 
 ## ⚙️ Requisitos
 
